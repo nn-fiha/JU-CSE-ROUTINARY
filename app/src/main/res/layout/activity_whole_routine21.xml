@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WholeRoutine_2_1_Activity">
+    <include layout="@layout/toolbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="130dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textStyle="bold"
+        android:text="Class Routine-2023"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rL2"
+            android:background="#34cef5">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tL1">
+                <TableRow
+
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:id="@+id/tR1">
+
+                    <TextView
+                        android:paddingRight="5dp"
+                        android:text="Day"
+                        android:textStyle="bold"
+
+
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rL2"
+            android:background="#34cef5"
+            android:id="@+id/rL3"
+
+            >
+
+            <com.example.jucseroutinery.HorizontalScroll
+                android:id="@+id/horizontalView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tL2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    >
+
+                    <TableRow
+
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp">
+
+                        <TextView
+                            android:width="100dp"
+                            android:paddingRight="5dp"
+                            android:text="9:00-10:20"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:paddingRight="5dp"
+                            android:text="10:25-11:45"
+                            android:textStyle="bold"
+                            android:width="100dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:paddingRight="5dp"
+                            android:text="11:50-1:10"
+                            android:textStyle="bold"
+                            android:width="100dp"/>
+
+                        <TextView
+                            android:paddingRight="5dp"
+                            android:text="2:00-3:20"
+                            android:textStyle="bold"
+                            android:width="100dp"
+                            />
+
+                        <TextView
+                            android:paddingRight="5dp"
+                            android:textStyle="bold"
+                            android:text="3:25-4:45"
+                            android:width="100dp"
+                            />
+                    </TableRow>
+                </TableLayout>
+
+
+
+
+            </com.example.jucseroutinery.HorizontalScroll>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rL4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rL2"
+            >
+            <com.example.jucseroutinery.VerticalScroll
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbarStyle="outsideInset">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tL3">
+                    <TableRow >
+
+                        <TextView
+                            android:id="@+id/txtSunday"
+                            android:text=""
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:height="50dp"
+                            />
+                    </TableRow>
+                    <TableRow >
+
+                        <TextView
+                            android:id="@+id/txtMonday"
+                            android:text=""
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:height="50dp"/>
+                    </TableRow>
+                    <TableRow >
+
+                        <TextView
+                            android:id="@+id/txtTuesday"
+                            android:text=""
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:height="50dp"
+                            />
+                    </TableRow>
+                    <TableRow >
+
+                        <TextView
+                            android:id="@+id/txtWdnsday"
+                            android:text=""
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:height="50dp"/>
+                    </TableRow>
+                    <TableRow >
+
+                        <TextView
+                            android:id="@+id/txtThursday"
+                            android:text=""
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:height="50dp"/>
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </com.example.jucseroutinery.VerticalScroll>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rL3"
+            android:layout_toRightOf="@id/rL2"
+            android:id="@+id/rL5"
+
+            >
+            <com.example.jucseroutinery.VerticalScroll
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbarStyle="outsideInset"
+                android:id="@+id/scrollView2"
+                >
+
+                <com.example.jucseroutinery.HorizontalScroll
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalView2"
+                    >
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tL4">
+
+
+                        <TableRow android:paddingLeft="5dp"
+                            android:minHeight="50dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:width="100dp"
+                                android:text=""
+                                />
+
+                            <TextView
+                                android:width="100dp"
+                                android:text=""
+                                android:layout_span="2"
+                                android:paddingRight="5dp"/>
+
+                            <TextView
+                                android:width="100dp"
+                                android:text=""
+                                android:paddingRight="5dp"/>
+                            <TextView
+                                android:width="100dp"
+                                android:text=""
+                                android:paddingRight="5dp"/>
+                        </TableRow>
+
+
+                        <View
+                            android:layout_width="320dp"
+                            android:layout_height="1dp"
+                            android:background="@color/black"
+                            />
+
+
+                        <TableRow android:paddingLeft="5dp"
+                            android:minHeight="50dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:text="Class 1"
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+
+
+
+                            <TextView
+                                android:width="100dp"
+                                android:paddingRight="10dp"
+                                android:layout_span="2"
+                                android:text="Class 3" />
+
+                            <TextView
+                                android:text="Class 4"
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+                            <TextView
+                                android:text="Class 5"
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+                        </TableRow>
+
+
+                        <View
+                            android:layout_width="320dp"
+                            android:layout_height="1dp"
+                            android:background="@color/black"
+                            />
+
+                        <TableRow android:paddingLeft="5dp"
+                            android:minHeight="50dp"
+                            android:gravity="center_vertical">
+
+
+
+
+                            <TextView
+                                android:text="Class 1"
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+
+                            <TextView
+                            android:text=""
+                            android:width="100dp"
+                            android:paddingRight="5dp"/>
+
+                            <TextView
+                                android:text="Class 3"
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+
+                            <TextView
+                                android:text=""
+                                android:width="100dp"
+                                android:layout_span="2"
+                                android:paddingRight="5dp"/>
+
+                        </TableRow>
+
+
+                        <View
+                            android:layout_width="320dp"
+                            android:layout_height="1dp"
+                            android:background="@color/black"
+                            />
+                        <TableRow android:paddingLeft="5dp"
+                            android:minHeight="50dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:text="Class 1"
+                                android:paddingRight="5dp"
+                                android:width="100dp"/>
+
+                            <TextView
+                                android:text="Class 2"
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+                            <TextView
+                                android:text="Class 3"
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+
+                            <TextView
+                                android:text=""
+                                android:width="100dp"
+                                android:layout_span="2"
+                                android:paddingRight="5dp"/>
+
+                        </TableRow>
+                        <View
+                            android:layout_width="320dp"
+                            android:layout_height="1dp"
+                            android:background="@color/black"
+                            />
+
+                        <TableRow android:paddingLeft="5dp"
+                            android:minHeight="50dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:text=""
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+                            <TextView
+                                android:text=""
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+
+                            <TextView
+                                android:text=""
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+
+                            <TextView
+                                android:text=""
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+                            <TextView
+                                android:text=""
+                                android:width="100dp"
+                                android:paddingRight="5dp"/>
+                        </TableRow>
+
+
+                        <View
+                            android:layout_width="320dp"
+                            android:layout_height="1dp"
+                            android:background="@color/black"
+                            />
+
+
+
+                    </TableLayout>
+
+
+                </com.example.jucseroutinery.HorizontalScroll>
+            </com.example.jucseroutinery.VerticalScroll>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

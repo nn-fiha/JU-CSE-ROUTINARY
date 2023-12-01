@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/rLMain"
+    >
+    <include layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rL1"
+        android:layout_marginTop="100dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Jahangirnagar University"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Department of Computer Science and Engineering"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="Class Routine-2023"
+
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rL1"
+        android:id="@+id/rL2"
+        android:background="#34cef5"
+        android:paddingLeft="10dp">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tL1">
+            <TableRow
+
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/tR1">
+
+                <TextView
+                    android:paddingRight="5dp"
+                    android:text="Day"
+                    android:textStyle="bold"
+
+
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rL1"
+        android:layout_toRightOf="@id/rL2"
+        android:background="#34cef5"
+        android:paddingLeft="10dp"
+        android:id="@+id/rL3"
+
+        >
+
+        <com.example.jucseroutinery.HorizontalScroll
+            android:id="@+id/horizontalView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TableLayout
+                android:id="@+id/tL2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                >
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="15dp">
+
+
+                    <TextView
+                        android:width="140dp"
+                        android:paddingRight="5dp"
+                        android:text="Semester"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:width="140dp"
+                        android:paddingRight="5dp"
+                        android:text="9:00-10:20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:width="140dp"
+                        android:paddingRight="5dp"
+                        android:text="10:25-11:45"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:width="140dp"
+                        android:paddingRight="5dp"
+                        android:text="11:50-1:10"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:width="140dp"
+                        android:paddingRight="5dp"
+                        android:text="2:00-3:20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:width="140dp"
+                        android:paddingRight="5dp"
+                        android:text="3:25-4:45"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+        </com.example.jucseroutinery.HorizontalScroll>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rL4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rL2"
+        android:paddingLeft="10dp"
+        >
+        <com.example.jucseroutinery.VerticalScroll
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbarStyle="outsideInset">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tL3">
+                <TableRow >
+
+                    <TextView
+                        android:text="Sunday"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:height="105dp"
+                        />
+                </TableRow>
+                <TableRow >
+
+                    <TextView
+                        android:text="Monday"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:height="105dp"/>
+                </TableRow>
+                <TableRow >
+
+                    <TextView
+                        android:text="Tuesday"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:height="105dp"
+                        />
+                </TableRow>
+                <TableRow >
+
+                    <TextView
+                        android:text="Wednesday"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:height="105dp"/>
+                </TableRow>
+                <TableRow >
+
+                    <TextView
+                        android:text="Thursday"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:height="105dp"/>
+                </TableRow>
+
+
+            </TableLayout>
+        </com.example.jucseroutinery.VerticalScroll>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rL3"
+        android:layout_toRightOf="@id/rL2"
+        android:id="@+id/rL5"
+        android:paddingLeft="10dp"
+        >
+        <com.example.jucseroutinery.VerticalScroll
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbarStyle="outsideInset"
+            android:id="@+id/scrollView2"
+            >
+
+            <com.example.jucseroutinery.HorizontalScroll
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalView2"
+                >
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tL4">
+
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp"
+                        >
+
+                        <TextView
+                            android:text="M.Sc.-1(2022)"
+                            android:width="140dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-612(MA)R-101"
+                            android:width="140dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-608(SB) R-103"
+                            android:width="140dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:width="140dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-607(HK)R-103"
+                            android:width="140dp"
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+                            android:width="140dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                    />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="B.Sc.4-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-407(II) R-101"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-403(HK)R-102"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-401(AK) R-101"
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="B.Sc.3-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-307(JKD)R-101"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-304(MSU+MA) R-203"
+                            android:layout_span="2"
+                            android:paddingRight="5dp"/>
+
+
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text="CSE-305(BA) R-101"
+
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="B.Sc.2-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-205(GM) R-103"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-206(GM+AK+NAR) R-102"
+                            android:layout_span="2"
+
+                            android:paddingRight="5dp"/>
+
+
+
+                        <TextView
+                            android:text="CSE-203(EI) R-102"
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="B.Sc.1-1(2022)"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-107(BA) R-102"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="2dp"
+                        android:background="@color/black"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+
+
+
+                        <TextView
+                            android:text="M.Sc.-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-610(IJ)R-102"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-612(MA)R-201"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-605(MSU)R-102"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="B.Sc.4-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-401(AK) R-101"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-407(II) R-101"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="10dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+                        <TextView
+                            android:text="B.Sc.3-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-303(MSU) R-101"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-305(BA) R-101"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="B.Sc.2-1(2022)"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-208(SS+MZR+SN) R-302"
+                            android:layout_span="2"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-209(MAI) R-103"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+                        <TextView
+                            android:text="B.Sc.1-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="2dp"
+                        android:background="@color/black"
+                        />
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+
+
+                        <TextView
+                            android:text="M.Sc.-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-603(GM)R-102"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-607(HK)R-103"
+
+                            android:paddingRight="10dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="B.Sc.4-1(2022)"
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text="CSE-410(EI+AM) R-302"
+                            android:layout_span="2"
+                            android:paddingRight="5dp"/>
+
+
+
+                        <TextView
+                            android:text="CSE-405(LJR) R-101"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-403(HK) R-102"
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="B.Sc.3-1(2022)"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-307(JKD) R-101"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-309(AKA) R-102"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="B.Sc.2-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-207(SS) R-103"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-205(GM) R-103"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-203(EI) R-102"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-212(EI+NAR+SN) R-203"
+                            android:layout_span="2"
+                            android:paddingRight="5dp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+                        <TextView
+                            android:text="B.Sc.1-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-108(BA+NAR+SN) Circuit Lab"
+                            android:layout_span="3"
+                            android:paddingRight="5dp"/>
+
+
+
+                        <TextView
+                            android:text="PHY-109(TBA)"
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text="CSE-107(BA) R-102"
+
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="2dp"
+                        android:background="@color/black"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="M.Sc.-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-610(IJ)R-102"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-605(MSU)R-102"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+                        <TextView
+                            android:text="B.Sc.4-1(2022)"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-406(LJR+GM) R-203"
+                            android:layout_span="2"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+
+
+                        <TextView
+                            android:text="CSE-405(LJR) R-101"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+                        <TextView
+                            android:layout_height="match_parent"
+
+                            android:paddingRight="5dp"
+                            android:text="B.Sc.3-1(2022)" />
+
+
+                        <TextView
+                            android:text="CSE-303(MSU) R-101"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-310(AKA+JKD) R-302"
+                            android:layout_span="2"
+                            android:paddingRight="5dp"/>
+
+
+
+                        <TextView
+                            android:text="CSE-312(ASMMR+BA+AM) R-203"
+                            android:layout_span="2"
+                            android:paddingRight="5dp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="B.Sc.2-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-209(MAI) R-103"
+
+                            android:paddingRight="10dp"/>
+
+                        <TextView
+                            android:text="CSE-210 (MAI+II) R-302"
+                            android:layout_span="2"
+                            android:paddingRight="5dp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+                        <TextView
+                            android:text="B.Sc.1-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text=""
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-105(ASMMR) R-103"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-112(SSM)URP Lab"
+                            android:layout_span="2"
+                            android:paddingRight="5dp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="2dp"
+                        android:background="@color/black"
+                        />
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="M.Sc.-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-608(SB)R-103"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-603(GM)R-102"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+
+                        <TextView
+                            android:text="B.Sc.4-1(2022)"
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-404(HK+MZR) R-203"
+                            android:width="85dp"
+                            android:layout_span="2"
+                            android:paddingRight="5dp"/>
+
+
+
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+                            android:width="85dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+                        <TextView
+                            android:text="B.Sc.3-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text="CSE-309(AKA) R-102"
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-314(SB+NAR) R-201"
+                            android:layout_span="2"
+                            android:paddingRight="5dp"/>
+
+
+
+                        <TextView
+                            android:text=""
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+                        <TextView
+                            android:text="B.Sc.2-1(2022)"
+
+                            android:paddingRight="5dp"/>
+
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:text="CSE-207(SS) R-103"
+
+                            android:paddingRight="10dp"/>
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:background="#637567"
+                        />
+
+                    <TableRow android:paddingLeft="5dp"
+                        android:minHeight="20dp">
+                        <TextView
+                            android:text="B.Sc.1-1(2022)"
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text="CSE-105(ASMMR) R-102"
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text="CSE-106(ASMMR+MAI+SN) Lab-302"
+                            android:layout_span="2"
+                            android:paddingRight="5dp"/>
+
+
+
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                        <TextView
+                            android:text=""
+
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="2dp"
+                        android:background="@color/black"
+                        />
+
+
+
+                </TableLayout>
+
+
+            </com.example.jucseroutinery.HorizontalScroll>
+        </com.example.jucseroutinery.VerticalScroll>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">JU CSE ROUTINERY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="Week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+    </string-array>
+
+    <string-array name="STime41">
+        <item>10:25-11:45</item>
+        <item>11:50-1:10</item>
+        <item>2:00-3:20</item>
+    </string-array>
+
+    <string-array name="MTime41">
+        <item> 9:00-10:20</item>
+        <item>10:25-11:45</item>
+
+    </string-array>
+
+    <string-array name="TTime41">
+        <item> 9:00-11:45</item>
+        <item>11:50-1:10</item>
+        <item>2:00-3:20</item>
+    </string-array>
+
+    <string-array name="WTime41">
+        <item>10:25-1:10</item>
+        <item>2:00-3:20</item>
+    </string-array>
+
+    <string-array name="ThTime41">
+        <item> 9:00-11:45</item>
+
+    </string-array>
+
+    <string-array name="STime11">
+
+        <item>10:25-11:45</item>
+        <item>11:50-1:10</item>
+        <item>2:00-3:20</item>
+        <item>3:25-4:45</item>
+    </string-array>
+
+    <string-array name="TTime11">
+        <item> 9:00-1:10</item>
+        <item>2:00-3:20</item>
+        <item>3:25-4:45</item>
+    </string-array>
+
+    <string-array name="WTime11">
+        <item>10:25-1:10</item>
+        <item>2:00-4:45</item>
+
+    </string-array>
+
+    <string-array name="ThTime11">
+        <item> 9:00-10:20</item>
+        <item>10:25-1:10</item>
+        <item>2:00-3:20</item>
+        <item>3:25-4:45</item>
+    </string-array>
+
+
+    <string-array name="STime21">
+        <item> 9:00-10:20</item>
+        <item>10:25-1:10</item>
+        <item>2:00-3:20</item>
+        <item>3:25-4:45</item>
+    </string-array>
+
+    <string-array name="MTime21">
+        <item>10:25-1:10</item>
+        <item>2:00-3:20</item>
+        <item>3:25-4:45</item>
+    </string-array>
+
+    <string-array name="TTime21">
+        <item> 9:00-10:20</item>
+        <item>10:25-11:45</item>
+        <item>11:50-1:10</item>
+        <item>2:00-4:45</item>
+
+    </string-array>
+
+    <string-array name="WTime21">
+
+        <item>11:50-1:10</item>
+        <item>2:00-4:45</item>
+
+    </string-array>
+
+
+    <string-array name="ThTime21">
+
+        <item>10:25-11:45</item>
+
+    </string-array>
+
+    <string-array name="STime31">
+        <item> 9:00-10:20</item>
+        <item>10:25-1:10</item>
+        <item>3:25-4:45</item>
+    </string-array>
+
+    <string-array name="MTime31">
+        <item> 9:00-10:20</item>
+        <item>11:50-1:10</item>
+
+    </string-array>
+    <string-array name="TTime31">
+        <item> 9:00-10:20</item>
+        <item>10:25-11:45</item>
+
+    </string-array>
+
+    <string-array name="WTime31">
+        <item> 9:00-10:20</item>
+        <item>10:25-1:10</item>
+        <item>2:00-4:45</item>
+    </string-array>
+
+    <string-array name="ThTime31">
+        <item> 9:00-10:20</item>
+        <item>10:25-1:10</item>
+    </string-array>
+
+
+</resources>

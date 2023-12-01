@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rLMain"
+    tools:context=".AdminDatabaseActivity">
+    <include layout="@layout/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="90dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/txtMsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MSc 1st Semester"
+            android:layout_gravity="center"
+            android:padding="30dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="openWholeRoutineActivity"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_below="@id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/txt4th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4th Year 1st Semester"
+            android:layout_gravity="center"
+            android:padding="30dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="openWholeRoutineActivity"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_below="@id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/txt3rd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3rd Year 1st Semester"
+            android:layout_gravity="center"
+            android:padding="30dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="openWholeRoutineActivity"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:layout_below="@id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/txt2nd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd Year 1st Semester"
+            android:layout_gravity="center"
+            android:padding="30dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="openWholeRoutineActivity"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card5"
+        android:layout_below="@id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/txt1st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1st Year 1st Semester"
+            android:layout_gravity="center"
+            android:padding="30dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="openWholeRoutineActivity"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
