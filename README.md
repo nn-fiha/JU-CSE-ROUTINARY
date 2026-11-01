@@ -56,3 +56,18 @@ Class routines in the department were shared as static files, which made it hard
 ---
 
 ### Project structure
+
+app/src/main/java/com/example/jucseroutinery/
+├── Login, AdminFragment, StudentFragment # tabbed admin/student login
+├── MainActivity, SplashActivity # entry screens
+├── DailyRoutineActivity, BatchRoutineActivity2, WholeRoutine* # routine views
+├── AddActivity, UpdateActivity, AdminDatabaseActivity # admin management
+├── MyDatabaseHelper, MyDatabaseHelper1 # SQLite database helpers
+└── AlarmReciever, NotificationActivity # reminders and notifications
+
+
+---
+
+### Author
+
+Nurun Nahar Fiha · [Website](https://nn-fiha.vercel.app/) · [GitHub](https://github.com/nn-fiha)
