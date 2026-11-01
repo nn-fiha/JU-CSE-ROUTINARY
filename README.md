@@ -31,13 +31,6 @@ Class routines in the department were shared as static files, which made it hard
 
 ---
 
-### Screenshots
-
-<!-- Add screenshots here, e.g.: -->
-<!-- <img src="screenshots/login.png" width="200"> <img src="screenshots/daily.png" width="200"> -->
-
----
-
 ### Tech
 
 `Java` `Android SDK` `SQLite` `RecyclerView` `Material Components` `AlarmManager` `Notifications`
